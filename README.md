@@ -15,3 +15,31 @@
 
 ## Step 1: make the Arduino circuit 
 You simply need to connect the 2 end pins of the potentiometer to the 5V and ground. The middle pin of the potentiometer meter to A0. 
+![](https://padlet-uploads.storage.googleapis.com/967583516/94eecccddfb219a179a9db388d513ccc/20211124_221103.jpg) 
+
+## Step 2: Open the Arduino software and copy the code below 
+##### each code step has an explanation next to it 
+
+```javascript
+
+int pot_pin = A0;   // Initializing the Potentiometer pin
+
+int pot_output;     // Declaring a variable for potentiometer output
+
+void setup ( ) {
+
+Serial.begin(9600);       // Starting the serial communication at 115200 baud rate
+
+} 
+
+void loop ( ) { 
+
+pot_output = analogRead (pot_pin); // Reading from the potentiometer
+
+int mapped_output = map (pot_output, 0, 1023, 0, 255); // Mapping the output of potentiometer to 0-255 to be read by the Processing IDE 
+
+Serial.println (mapped_output);     // Sending the output to Processing IDE
+
+} 
+```
+## Step 2: Open the Processing software and copy the code below
