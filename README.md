@@ -14,10 +14,10 @@
 (both the software are free ;)
 
 ## Step 1: make the Arduino circuit 
-You simply need to connect the 2 end pins of the potentiometer to the 5V and ground. The middle pin of the potentiometer meter to A0. 
+##### You simply need to connect the 2 end pins of the potentiometer to the 5V and ground. The middle pin of the potentiometer meter to A0. 
 ![](https://padlet-uploads.storage.googleapis.com/967583516/94eecccddfb219a179a9db388d513ccc/20211124_221103.jpg) 
 
-## Step 2: Open the Arduino software and copy the code below 
+## Step 2: Open the Arduino software and copy the code that's below and run it 
 ##### each code step has an explanation next to it 
 
 ```javascript
@@ -42,4 +42,56 @@ Serial.println (mapped_output);     // Sending the output to Processing IDE
 
 } 
 ```
-## Step 2: Open the Processing software and copy the code below
+
+##### Note: Ensure that the right port and board is selected in Arduino
+![](https://padlet-uploads.storage.googleapis.com/967583516/44d0bc788403f0c91d77e52519212af8/user_guide_for_setting_board_and_port_.png) 
+
+
+## Step 3: Open the Processing software and copy the code that's below
+##### each code step has an explanation next to it 
+
+```javascript
+import processing.serial.*;    // Importing the serial library to communicate with the Arduino 
+
+Serial myPort;      // Initializing a vairable named 'myPort' for serial communication
+
+float background_color ;   // Variable for changing the background color
+
+PImage Asset;       // Variable for adding the image
+
+
+
+void setup ( ) {
+
+size (570,  300);     // Size of the serial window, you can increase or decrease as you want
+
+Asset = loadImage("Asset.png");  // Change the image file name accordingly, ensure that the image file is the same folder as the processing file
+
+myPort  =  new Serial (this, "COM4",  9600); // Set the com port according to which port the Arduino cirucit is connected to in the laptop  
+
+myPort.bufferUntil ( '\n' );   // Receiving the data from the Arduino IDE
+
+} 
+
+
+
+void serialEvent  (Serial myPort) {
+
+image(Asset, 0, 0); ;  // Change the image file name accordingly
+  
+background_color  =  float (myPort.readStringUntil ( '\n' ) ) ;  // Changing the background color according to received data
+
+} 
+
+
+
+void draw ( ) {
+
+background ( 150, 50, background_color );   // Initial background color, when we will open the serial window 
+
+Asset = loadImage("Asset.png");  ;  // Change the image file name accordingly
+
+}
+```
+
+##### Note: the png image that I used had the file name Asset. So do remember to change the file name correctly in the code. Also, do crosscheck that the right port is written in the code (it is the 8th line of the code).
