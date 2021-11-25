@@ -107,3 +107,8 @@ Asset = loadImage("Asset.png");  ;  // Change the image file name accordingly
 ##### Link to tutorial video that shows how to test if your hidden message/design works properly or not. (https://vimeo.com/650028363) 
 ##### (below is the screenshot image of the illustrator file) 
 ![](https://padlet-uploads.storage.googleapis.com/967583516/908707697964533c58821fe111c7d18d/tutorial_vid_ss.png) 
+
+
+## Main research links used
+##### Orignal code that I took and edited https://maker.pro/arduino/tutorial/how-to-make-arduino-and-processing-ide-communicate 
+##### Used to understand serial communication https://littlebirdelectronics.com.au/guides/45/connect-arduino-to-processing
