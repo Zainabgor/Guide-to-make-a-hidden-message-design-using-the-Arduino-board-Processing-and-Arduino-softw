@@ -96,8 +96,10 @@ Asset = loadImage("Asset.png");  ;  // Change the image file name accordingly
 
 ##### Note: the png image that I used had the file name Asset. So do remember to change the file name correctly in the code. Also, do crosscheck that the right port is written in the code (it is the 8th line of the code).
 
-##### That's all!
+## That's all!
 
 ## Extra tips to make the png image 
 ##### Use the link https://anonfiles.com/Dat0p1X0ue/hidden_code_user_file_ai to download an Adobe Illustrator file that images of the five main colours seen when the potentiometer is rotated. This will help you colour your hidden code/design easily. 
 ##### Link to tutorial video that shows how to test if your hidden message/design works properly or not. (https://vimeo.com/650028363) 
+##### (below is the screenshot image of the illustrator file) 
+![](https://padlet-uploads.storage.googleapis.com/967583516/908707697964533c58821fe111c7d18d/tutorial_vid_ss.png) 
