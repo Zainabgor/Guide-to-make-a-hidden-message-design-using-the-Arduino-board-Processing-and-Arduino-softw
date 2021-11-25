@@ -1,5 +1,7 @@
 # Guide to make a hidden message/design using the Arduino board, Processing software and Arduino software 
 
+##### Click here to see how the outcome looks https://vimeo.com/650104709
+
 ## The logic (how it works) 
 ##### The Arduino and the Processing will communicate with each other through serial communication. When you manually rotate the potentiometer it will send a reading to Aridino which will convert it into an integer number between 0 to 225. Processing will change the colour in the serial window that corresponds to the number reading that it received. 
 ##### Since the whole process only affects the background colour of the serial window you can place an image with a transparent background (png) on top of it. If your change the colour of certain parts of the image according to the colours in the serial window you can hide a message that will only be read on depending on the movement of the potential meter.  
@@ -14,8 +16,8 @@
 (both the software are free ;)
 
 ## Step 1: make the Arduino circuit 
-##### You simply need to connect the 2 end pins of the potentiometer to the 5V and ground. The middle pin of the potentiometer meter to A0. 
-![](https://padlet-uploads.storage.googleapis.com/967583516/94eecccddfb219a179a9db388d513ccc/20211124_221103.jpg) 
+##### You simply need to connect the 2 end pins of the potentiometer to the 5V and ground (green wires). The middle pin of the potentiometer meter to A0 (black wire).
+![](https://padlet-uploads.storage.googleapis.com/967583516/045064ba7ad2c4a30436c7dca41210da/circuit_image_for_open_source_file.jpg) 
 
 ## Step 2: Open the Arduino software and copy the code that's below and run it 
 ##### each code step has an explanation next to it 
@@ -97,6 +99,8 @@ Asset = loadImage("Asset.png");  ;  // Change the image file name accordingly
 ##### Note: the png image that I used had the file name Asset. So do remember to change the file name correctly in the code. Also, do crosscheck that the right port is written in the code (it is the 8th line of the code).
 
 ## That's all!
+
+
 
 ## Extra tips to make the png image 
 ##### Use the link https://anonfiles.com/Dat0p1X0ue/hidden_code_user_file_ai to download an Adobe Illustrator file that images of the five main colours seen when the potentiometer is rotated. This will help you colour your hidden code/design easily. 
