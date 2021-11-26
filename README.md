@@ -100,9 +100,7 @@ Asset = loadImage("Asset.png");  ;  // Change the image file name accordingly
 
 ##### Note: if you want to use the same image that I used (the one that says 'creative computing id fun if you have patience) then use the link https://anonfiles.com/j9v175X6ud/Asset_png to download it. If not you can create your own hidden message/design in the form of a png image. There are a few helpful tips at the end of the read me file that will help you do that. REMEMBER the png image that I used had the file name Asset. So do change the file name correctly in the 7th and 12th lines of the code if you decide to create and use your own image. Also, do cross-check that the right port is written in the code (it is the 8th line of the code).
 
-## That's all! You did it!
-
-
+## That's all! 
 
 ## Extra tips to make the png image 
 ##### Use the link https://anonfiles.com/Dat0p1X0ue/hidden_code_user_file_ai to download an Adobe Illustrator file that images of the five main colours seen when the potentiometer is rotated. This will help you colour your hidden code/design easily. 
