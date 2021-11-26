@@ -1,6 +1,8 @@
 # Guide to make a hidden message/design using the Arduino board, Processing software and Arduino software 
 
-##### Click here to see how the outcome looks https://vimeo.com/650104709
+##### In the video below you can see how the final outcome of following this guide looks like
+https://user-images.githubusercontent.com/95038832/143656161-93ffd208-f300-4fb8-a3cd-aa9d8bda967c.mp4
+
 
 ## The logic (how it works) 
 ##### The Arduino and the Processing will communicate with each other through serial communication. When you manually rotate the potentiometer it will send a reading to Aridino which will convert it into an integer number between 0 to 225. Processing will change the colour in the serial window that corresponds to the number reading that it received. 
@@ -96,18 +98,16 @@ Asset = loadImage("Asset.png");  ;  // Change the image file name accordingly
 }
 ```
 
-##### Note: the png image that I used had the file name Asset. So do remember to change the file name correctly in the code. Also, do crosscheck that the right port is written in the code (it is the 8th line of the code).
+##### Note: if you want to use the same image that I used (the one that says 'creative computing id fun if you have patience) then use the link https://anonfiles.com/j9v175X6ud/Asset_png to download and use the same one. If not you can create your own hidden message/design in the form of a png image. There are a few helpful tips at the end of the read me file that will help you do that. REMEMBER the png image that I used had the file name Asset. So do change the file name correctly in the 7th and 12th lines of the code if you decide to create and use your own image. Also, do cross-check that the right port is written in the code (it is the 8th line of the code).
 
-## That's all!
+## That's all! You did it!
 
 
 
 ## Extra tips to make the png image 
 ##### Use the link https://anonfiles.com/Dat0p1X0ue/hidden_code_user_file_ai to download an Adobe Illustrator file that images of the five main colours seen when the potentiometer is rotated. This will help you colour your hidden code/design easily. 
-##### Link to tutorial video that shows how to test if your hidden message/design works properly or not. (https://vimeo.com/650028363) 
-##### (below is the screenshot image of the illustrator file) 
-![](https://padlet-uploads.storage.googleapis.com/967583516/908707697964533c58821fe111c7d18d/tutorial_vid_ss.png) 
-
+##### Below is a tutorial video that shows how to test if your hidden message/design works properly or not. 
+https://user-images.githubusercontent.com/95038832/143656348-e366bf20-8e27-489d-bbc7-956578688764.mp4
 
 ## Main research links used
 ##### Orignal code that I took and edited https://maker.pro/arduino/tutorial/how-to-make-arduino-and-processing-ide-communicate 
