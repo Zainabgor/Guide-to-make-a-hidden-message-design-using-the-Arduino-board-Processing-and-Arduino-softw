@@ -1,6 +1,6 @@
-# Guide to make a hidden message/design using the Arduino board, Processing software and Arduino software 
+# Beginners's guide to make a hidden message/design using the Arduino board, Processing software and Arduino software 
 
-##### In the video below you can see how the final outcome of following this guide looks like
+##### In the video below you can see how the outcome of following this guide looks like
 https://user-images.githubusercontent.com/95038832/143656161-93ffd208-f300-4fb8-a3cd-aa9d8bda967c.mp4
 
 
